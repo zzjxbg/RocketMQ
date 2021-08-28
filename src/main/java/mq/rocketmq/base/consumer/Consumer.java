@@ -27,6 +27,7 @@ public class Consumer {
         consumer.setMessageModel(MessageModel.BROADCASTING);
 
        // 4.设置回调函数,处理消息
+       // MessageListenerConcurrently:并发消费
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
