@@ -30,7 +30,7 @@ public class AsyncProducer {
              * 参数二：消息Tag
              * 参数三：消息内容
              */
-            Message msg = new Message("base","Tag1",("Hello World" + i).getBytes());
+            Message msg = new Message("base","Tag2",("Hello World" + i).getBytes());
             //5.发送异步消息
             producer.send(msg, new SendCallback() {
                 /**
