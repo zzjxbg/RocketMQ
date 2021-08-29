@@ -17,7 +17,7 @@ public class Consumer {
         // 2.指定Nameserver地址
         consumer.setNamesrvAddr("192.168.109.130:9876;192.168.109.132:9876");
         // 3.订阅主题Topic和Tag
-        consumer.subscribe("FilterTagTopic","");
+        consumer.subscribe("FilterTagTopic","*");
 
         // 4.设置回调函数,处理消息
         // MessageListenerConcurrently:并发消费
